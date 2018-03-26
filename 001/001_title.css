@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:700,300);
+
+.frame {
+  font-family: "Poppins", sans-serif;
+  color: #ECEFF1;
+  height: 400px;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to top right, #29434E 0%, #00ACC1 100%);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  position: relative;
+  height: 100px;
+  width: 200px;
+}
+.number .one-one {
+  position: absolute;
+  height: 40px;
+  width: 20px;
+  top: 0;
+  left: -16px;
+  z-index: 1;
+  background: #ECEFF1;
+  border-radius: 3px;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+  transform: rotate(50deg);
+}
+.number .one-two {
+  position: absolute;
+  height: 100px;
+  width: 24px;
+  top: 0;
+  left: 0px;
+  z-index: 10;
+  background: #ECEFF1;
+  border-radius: 3px;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+.number .zero-one, .number .zero-two {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 0;
+  left: 17px;
+  z-index: 8;
+  border: 24px solid #ECEFF1;
+  border-radius: 50%;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+.number .zero-two {
+  z-index: 6;
+  left: 100px;
+}
+
+.big {
+  position: relative;
+  display: block;
+  margin-left: -4px;
+  z-index: 20;
+  font-size: 76px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 65px;
+}
+
+.small {
+  position: relative;
+  display: block;
+  margin-top: -20px;
+  margin-left: -4px;
+  z-index: 20;
+  font-size: 25px;
+  text-align: center;
+  line-height: 15px;
+}
