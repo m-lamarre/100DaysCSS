@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+
+body {
+  font-family: "Questrial", sans-serif;
+}
+
+.outer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  width: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  color: #29434E;
+  background: #29434E;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+.center {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+  background: #ECEFF1;
+  border-radius: 3px;
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.center.show-menu {
+  transform: translate3d(150px, 0, 0);
+}
+.center .header {
+  height: 60px;
+  width: 100%;
+  background: #007C91;
+}
+.center .header .menu-icon {
+  position: absolute;
+  height: 15px;
+  width: 29px;
+  top: 23px;
+  left: 20px;
+  cursor: pointer;
+}
+.center .header .menu-icon:hover .dash-top, .center .header .menu-icon:hover .dash-bottom, .center .header .menu-icon:hover .dash-bottom, .center .header .menu-icon:hover .circle {
+  background: #ECEFF1;
+}
+.center .header .menu-icon .dash-top, .center .header .menu-icon .dash-bottom {
+  position: absolute;
+  height: 3px;
+  width: 20px;
+  top: 0;
+  left: 0;
+  background: #5DDEF4;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+}
+.center .header .menu-icon .dash-bottom {
+  width: 29px;
+  top: auto;
+  bottom: 0;
+}
+.center .header .menu-icon .circle {
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  top: -2px;
+  right: 0;
+  background: #5DDEF4;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+.center .header .title {
+  display: block;
+  text-align: center;
+  color: #ECEFF1;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 60px;
+}
+.center .header .search-input {
+  box-sizing: border-box;
+  position: absolute;
+  height: 34px;
+  width: 230px;
+  top: 13px;
+  right: 55px;
+  background: #ECEFF1;
+  color: #29434E;
+  font-size: 14px;
+  border-radius: 17px;
+  border: none;
+  padding: 0 17px;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(15px);
+  opacity: 0;
+  pointer-events: none;
+}
+.center .header .search-input:focus {
+  outline: none;
+}
+.center .header .search-input.active {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: all;
+}
+.center .header .search-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  color: #5DDEF4;
+  font-size: 21px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.center .header .search-icon:hover {
+  color: #ECEFF1;
+}
+.center .notifications {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.center .notifications .line {
+  position: absolute;
+  width: 3px;
+  top: 0;
+  left: 27px;
+  bottom: 0;
+  background: #819CA9;
+}
+.center .notifications .notification {
+  position: relative;
+  z-index: 2;
+  margin: 25px 20px 25px 43px;
+}
+.center .notifications .notification:nth-child(2) {
+  animation: show-notific 0.5s ease-out 0.4s;
+  animation-fill-mode: both;
+}
+.center .notifications .notification:nth-child(3) {
+  animation: show-notific 0.5s ease-out 0.6s;
+  animation-fill-mode: both;
+}
+.center .notifications .notification:nth-child(4) {
+  animation: show-notific 0.5s ease-out 0.8s;
+  animation-fill-mode: both;
+}
+.center .notifications .notification:hover {
+  color: #007C91;
+  cursor: pointer;
+}
+.center .notifications .notification .circle {
+  box-sizing: border-box;
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  top: 0;
+  left: -20px;
+  background: #ECEFF1;
+  border-radius: 50%;
+  border: 2px solid #00ACC1;
+  box-shadow: 0 0 0 3px #ECEFF1;
+}
+.center .notifications .notification .time {
+  display: block;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 2px;
+  color: #546E7A;
+}
+.center .notifications .notification p {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.menu {
+  position: absolute;
+  height: 270px;
+  width: 170px;
+  top: 65px;
+  left: 50px;
+  background: #546E7A;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(20px, 0, 0);
+}
+.menu.active {
+  box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3d(0, 0, 0);
+}
+.menu ul {
+  margin: 0;
+  padding: 10px 0;
+}
+.menu li {
+  color: #ECEFF1;
+  margin: 0;
+  padding: 16px 18px;
+  list-style: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.menu li:hover {
+  color: #5DDEF4;
+  background: #546E7A;
+}
+.menu li span {
+  display: block;
+  float: left;
+  margin-right: 8px;
+  margin-top: -1px;
+}
+
+@keyframes show-notific {
+  from {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
