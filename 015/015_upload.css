@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+
+body {
+  font-family: "Questrial", sans-serif;
+}
+
+.outer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  width: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  color: #29434E;
+  background: -webkit-linear-gradient(bottom left, #00B8D4 0%, #84FFFF 100%);
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+.center {
+  position: absolute;
+  width: 300px;
+  height: 260px;
+  top: 70px;
+  left: 50px;
+  background: #E0F7FA;
+  box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.bar {
+  position: absolute;
+  z-index: 1;
+  width: 300px;
+  height: 3px;
+  top: 49px;
+  left: 0;
+  background: #5DDEF4;
+  transition: all 3s ease-out;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+}
+.bar.active {
+  transform: scaleX(1) translate3d(0, 0, 0);
+}
+
+.title {
+  font-size: 20px;
+  line-height: 50px;
+  height: 50px;
+  border-bottom: 1px solid #00ACC1;
+  text-align: center;
+  font-weight: bold;
+}
+
+.dropzone {
+  position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+  display: table;
+  table-layout: fixed;
+  width: 100px;
+  height: 80px;
+  top: 86px;
+  left: 100px;
+  border: 1px dashed #819CA9;
+  border-radius: 3px;
+  text-align: center;
+  overflow: hidden;
+}
+.dropzone.is-dragover {
+  border-color: #29434E;
+  background: #ECEFF1;
+}
+.dropzone .content {
+  display: table-cell;
+  vertical-align: middle;
+}
+.dropzone .upload {
+  margin: 6px 0 0 2px;
+}
+.dropzone .filename {
+  display: block;
+  color: #263238;
+  font-size: 14px;
+  line-height: 18px;
+}
+.dropzone .input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.upload-btn {
+  position: absolute;
+  width: 140px;
+  height: 40px;
+  left: 80px;
+  bottom: 24px;
+  cursor: pointer;
+  background: #00ACC1;
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 0 0 #B0BEC5;
+  transition: all 0.2s ease-in-out;
+}
+.upload-btn:hover {
+  box-shadow: 0 2px 0 0 #90A4AE, 0 2px 10px 0 #00ACC1;
+}
+
+.syncing {
+  position: absolute;
+  top: 109px;
+  left: 135px;
+  opacity: 0;
+}
+.syncing.active {
+  animation: syncing 3.2s ease-in-out;
+}
+
+.done {
+  position: absolute;
+  top: 112px;
+  left: 132px;
+  opacity: 0;
+}
+.done.active {
+  animation: done 0.5s ease-in 3.2s;
+  animation-fill-mode: both;
+}
+
+@keyframes syncing {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes done {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
