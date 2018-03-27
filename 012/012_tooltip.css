@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial:600,400,300,300italic");
+
+body {
+  font-family: "Questrial", sans-serif;
+}
+
+.outer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  width: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  color: #ECEFF1;
+  background: #007C91;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+.quote {
+  position: relative;
+  margin-top: 100px;
+  padding: 0 30px;
+  text-align: justify;
+}
+.quote:before {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  content: "„";
+  font-family: Arial;
+  font-size: 250px;
+  color: #1A899C;
+  line-height: 35px;
+  top: -100px;
+  left: 7px;
+}
+.quote p {
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+.quote .author {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 28px;
+}
+.quote .tooltip {
+  position: relative;
+  display: inline-block;
+  background: #546E7A;
+  padding: 0px 8px 5px 8px;
+  text-align: left;
+  margin: -10px 0;
+  cursor: pointer;
+}
+.quote .tooltip:hover .info, .quote .tooltip:focus .info {
+  visibility: visible;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.quote .tooltip .info {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 53px;
+  left: -1px;
+  display: block;
+  background: #29434E;
+  width: 300px;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: text;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate3d(0, -20px, 0);
+  transition: all 0.5s ease-out;
+}
+.quote .tooltip .info:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 100%;
+  bottom: -14px;
+  left: 0;
+}
+.quote .tooltip .info:after {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  transform: rotate(45deg);
+  bottom: -5px;
+  left: 50%;
+  margin-left: -5px;
+  background: #29434E;
+}
+.quote .tooltip .info .pronounce {
+  display: block;
+  background: white;
+  color: #29434E;
+  padding: 8px 17px 8px 17px;
+  line-height: 16px;
+}
+.quote .tooltip .info .pronounce .icon {
+  position: relative;
+  margin-left: 10px;
+  top: 3px;
+  cursor: pointer;
+}
+.quote .tooltip .info .text {
+  display: block;
+  padding: 8px 17px;
+}
