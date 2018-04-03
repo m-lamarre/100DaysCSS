@@ -1,0 +1,96 @@
+.outer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  width: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  background: #FF9BF1;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.center {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.circle {
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+  top: 175px;
+  left: 115px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#c2 {
+  left: 175px;
+}
+
+#c3 {
+  left: 235px;
+}
+
+.active {
+  position: absolute;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  top: 180px;
+  left: 120px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  transition: all 1s ease;
+}
+
+#circle-1:checked ~ .active {
+  transform: translateX(0px);
+}
+
+#circle-2:checked ~ .active {
+  transform: translateX(60px);
+}
+
+#circle-3:checked ~ .active {
+  transform: translateX(120px);
+}
+
+.background {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background: #CAA8FF;
+  border-left: 400px solid #FF9BF1;
+  border-right: 400px solid #9EB9FF;
+  transition: all 1s ease;
+  transform: translateX(0px);
+}
+
+#circle-1:checked ~ .background {
+  transform: translateX(0px);
+}
+
+#circle-2:checked ~ .background {
+  transform: translateX(-400px);
+}
+
+#circle-3:checked ~ .background {
+  transform: translateX(-800px);
+}
