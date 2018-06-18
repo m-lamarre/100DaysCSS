@@ -88,3 +88,5 @@ I did them in HTML Slim and SASS in [CodePen](https://codepen.io/) but the files
 ### 021 - Pac-Man
 
 ![021 - pac-man](https://user-images.githubusercontent.com/18417244/38813518-61b0575e-418f-11e8-9b31-bc3405f5988f.gif)
+
+### 022 - Fitness Tracker
