@@ -90,3 +90,17 @@ I did them in HTML Slim and SASS in [CodePen](https://codepen.io/) but the files
 ![021 - pac-man](https://user-images.githubusercontent.com/18417244/38813518-61b0575e-418f-11e8-9b31-bc3405f5988f.gif)
 
 ### 022 - Fitness Tracker
+
+![022 - fitness tracker](https://user-images.githubusercontent.com/18417244/42186248-762941c6-7e3b-11e8-9ce3-a5e0ab2f19c5.gif)
+
+### 023 - Animated Typography
+
+![023 - animated typography](https://user-images.githubusercontent.com/18417244/42186249-766e2e76-7e3b-11e8-8197-41fd24e0d241.gif)
+
+### 024 - Button
+
+![024 - button](https://user-images.githubusercontent.com/18417244/42186250-76b18a86-7e3b-11e8-84d6-76a38d2ca806.gif)
+
+### 025 - Map Marker
+
+![025 - map marker](https://user-images.githubusercontent.com/18417244/42186251-76f34304-7e3b-11e8-8320-a57f817e69c0.gif)
