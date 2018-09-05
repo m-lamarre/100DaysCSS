@@ -104,3 +104,15 @@ I did them in HTML Slim and SASS in [CodePen](https://codepen.io/) but the files
 ### 025 - Map Marker
 
 ![025 - map marker](https://user-images.githubusercontent.com/18417244/42186251-76f34304-7e3b-11e8-8320-a57f817e69c0.gif)
+
+### 026 - Line on the Wind
+
+![026 - line on the wind](https://user-images.githubusercontent.com/18417244/45119601-3a6b0580-b15c-11e8-9e4d-132086516495.gif)
+
+### 027 - Modal Window
+
+![027 - modal window](https://user-images.githubusercontent.com/18417244/45119602-3b039c00-b15c-11e8-84b8-a595ae255e62.gif)
+
+### 028 - Checklist
+
+![028 - checklist](https://user-images.githubusercontent.com/18417244/45119603-3b039c00-b15c-11e8-8a5b-04870680dbe6.gif)
