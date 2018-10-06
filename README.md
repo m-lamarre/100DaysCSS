@@ -116,3 +116,19 @@ I did them in HTML Slim and SASS in [CodePen](https://codepen.io/) but the files
 ### 028 - Checklist
 
 ![028 - checklist](https://user-images.githubusercontent.com/18417244/45119603-3b039c00-b15c-11e8-8a5b-04870680dbe6.gif)
+
+### 029 - Ring Ring
+
+![029 - ring ring](https://user-images.githubusercontent.com/18417244/46576560-1144cb80-c9cd-11e8-82a4-73d250a9d72a.gif)
+
+### 030 - Search Field
+
+![030 - search field](https://user-images.githubusercontent.com/18417244/46576561-11dd6200-c9cd-11e8-9dbb-f677bd557313.gif)
+
+### 031 - Pendulum Wave
+
+![031 - pendulum wave](https://user-images.githubusercontent.com/18417244/46576562-11dd6200-c9cd-11e8-8b4b-0ce397eecad1.gif)
+
+032 - Counter
+
+![032 - counter](https://user-images.githubusercontent.com/18417244/46576563-11dd6200-c9cd-11e8-92da-ad3c3186b370.gif)
